@@ -1,0 +1,19 @@
+{
+  "name": "tg-contest",
+  "version": "1.0.0",
+  "description": "Task for Telegram code contest",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server dist -c-1",
+    "live": "livereload dist",
+    "start": "npm run live | npm run server"
+  },
+  "keywords": ["chart", "clear", "javascript", "vanillajs"],
+  "author": "Slaawwa <slaawwa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "livereload": "^0.7.0"
+  },
+  "dependencies": {}
+}

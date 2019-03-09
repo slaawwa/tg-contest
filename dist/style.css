@@ -1,0 +1,71 @@
+html, body {
+  font-family: Roboto, sans-serif !important;
+}
+
+body[tg-loaded] [tg-loader]{
+  display: none;
+}
+body[tg-loaded] #app {
+  display: block !important;
+}
+
+#app [tg-title] {
+    font-size: 24px;
+}
+
+#app [tg-chart] {
+    height: 500px;
+    border: 1px solid navy;
+    margin-bottom: 10px;
+}
+
+#app [tg-footer] {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    bottom: 10px;
+}
+#app [tg-footer] button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#app[light] [tg-footer] button:before {
+  content: attr(tg-light-text)
+}
+#app[dark] [tg-footer] button:before {
+  content: attr(tg-dark-text)
+}
+
+#app button {
+  cursor: pointer;
+}
+
+#app [tg-controls] button {
+  min-width: 100px;
+  height: 24px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  outline: none;
+}
+#app[dark] [tg-bgMode], #app[dark][tg-bgMode], body.dark {
+  background-color: gray;
+}
+#app[dark] [tg-colorMode] {
+  color: white;
+}
+
+#app[light] [tg-bgMode], #app[light][tg-bgMode], body.light {
+  background-color: white;
+}
+#app[light] [tg-colorMode] {
+/*   color: gray; */
+}
+
+#app [tg-controls] #joinedBtn {
+/*   border-color: green; */
+}
+#app [tg-controls] #leftBtn {
+/*   color: red; */
+}
